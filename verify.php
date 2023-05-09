@@ -11,6 +11,8 @@ curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($verify);
 var_dump($response);
 $responseData = json_decode($response);
+echo"<pre>";
+exit;
 if($responseData->success) {
     // your success code goes here
 } 

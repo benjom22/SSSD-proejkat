@@ -1,0 +1,8 @@
+{
+    "require": {
+        "vonage/client": "^4.0",
+        "mikecao/flight": "^2.0",
+        "zircote/swagger-php": "^3.3.7",
+        "spomky-labs/otphp": "^11.2"
+    }
+}

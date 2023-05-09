@@ -1,6 +1,6 @@
 <?php
 $data = array(
-            'secret' => "0xcc5268aC068Bcf0E89ADF177AAbD0F030d05892",
+            'secret' => "0xcc5268aC068Bcf60E89ADF177AAbD0F030d05892",
             'response' => $_POST['h-captcha-response']
         );
 $verify = curl_init();
@@ -10,7 +10,7 @@ curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
 curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($verify);
 //var_dump($response);
-$responseData = json_decode($response, true);
+$responseData = json_decode($response);
 var_dump($responseData);
 echo"<pre>";
 exit;

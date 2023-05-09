@@ -9,8 +9,9 @@ curl_setopt($verify, CURLOPT_POST, true);
 curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
 curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($verify);
-var_dump($response);
+//var_dump($response);
 $responseData = json_decode($response);
+var_dump($responseData);
 echo"<pre>";
 exit;
 if($responseData->success) {
